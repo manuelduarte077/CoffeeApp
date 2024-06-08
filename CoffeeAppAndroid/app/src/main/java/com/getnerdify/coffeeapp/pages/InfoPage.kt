@@ -9,7 +9,7 @@ import androidx.compose.ui.viewinterop.AndroidView
 
 @Composable
 fun MyWebView() {
-    var url = "https://firtman.github.io/coffeemasters/webapp"
+    var url = "https://manuelduarte077.github.io/CoffeeApp/coffeeapi/webapp/"
 
     AndroidView(factory = {
         WebView(it).apply {
