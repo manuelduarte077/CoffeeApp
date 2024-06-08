@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Banner -->
+    <header class="bg-blue-600 text-white py-12">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4">
+          Welcome to our Coffee App!
+        </h1>
+        <p class="text-xl">
+          A must-have app for coffee enthusiasts, developed using all major mobile development platforms. Currently available on both Android and iOS.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto py-8">
+      <h2 class="text-3xl font-bold text-center mb-8">Nuestras Aplicaciones</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Example Card 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://via.placeholder.com/150"
+            alt="App 1"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">App 1</h3>
+            <p class="text-gray-600 mb-4">Descripción breve de la App 1.</p>
+
+            <a
+              href="https://www.google.com"
+              class="bg-blue-500 text-white px-4 py-2 rounded"
+              >Ver Landing Page</a
+            >
+          </div>
+        </div>
+        <!-- Repeat the card for other apps -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://via.placeholder.com/150"
+            alt="App 2"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">App 2</h3>
+            <p class="text-gray-600 mb-4">Descripción breve de la App 2.</p>
+            <button onclick="" class="bg-blue-500 text-white px-4 py-2 rounded">
+              Ver Detalle
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://via.placeholder.com/150"
+            alt="App 3"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">App 3</h3>
+            <p class="text-gray-600 mb-4">Descripción breve de la App 3.</p>
+            <button onclick="" class="bg-blue-500 text-white px-4 py-2 rounded">
+              Ver Detalle
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="https://via.placeholder.com/150"
+            alt="App 4"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">App 4</h3>
+            <p class="text-gray-600 mb-4">Descripción breve de la App 4.</p>
+            <button onclick="" class="bg-blue-500 text-white px-4 py-2 rounded">
+              Ver Detalle
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button to go to API -->
+      <div class="text-center mt-8">
+        <button
+          onclick="goToAPI()"
+          class="bg-green-500 text-white px-6 py-3 rounded"
+        >
+          Ir a la API
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function goToAPI() {
+        window.location.href = "https://api.example.com"; // Reemplaza con la URL de tu API
+      }
+    </script>
+  </body>
+</html>
