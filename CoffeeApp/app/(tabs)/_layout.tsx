@@ -24,15 +24,13 @@ export default function TabLayout() {
         tabBarInactiveTintColor: Colors[colorScheme ?? "light"].background,
         tabBarStyle: {
           backgroundColor: Colors[colorScheme ?? "light"].tint,
-          height: 60,
-          paddingBottom: 5,
         },  
         headerShown: useClientOnlyValue(false, true),
         headerTintColor: Colors[colorScheme ?? "light"].background,
         headerStyle: {
-          backgroundColor: Colors[colorScheme ?? "light"].tint,          
+          backgroundColor: Colors[colorScheme ?? "light"].tint,     
         },
-       
+        headerTitleAlign: "center",
       }}
     >
       <Tabs.Screen
